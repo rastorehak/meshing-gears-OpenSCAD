@@ -40,7 +40,7 @@ generate = 0;
 if (generate == 0) {
   // Place gear 2 (the intermediate gear) at the origin.
   translate([(dp1+dp2)/2, 0, 0]) gear1();
-  gear2();
+  rotate([0,0,1.8])mirror([0,1,0])gear2();
   translate([0, (dp2+dp3)/2, 0]) gear3();
 }
 else if (generate == 1) {
